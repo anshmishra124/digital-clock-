@@ -12,7 +12,7 @@ This project is beginner-friendly and demonstrates **GUI programming** in Python
 ## Screenshot
 
 
-
+https://github.com/anshmishra124/digital-clock-/blob/cf7cfd852cf5f9eaac1bf2b3ec9bdf5edfdaf177/Screenshot%20(126).png
 
 
 
