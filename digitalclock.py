@@ -1,0 +1,30 @@
+import tkinter as tk
+from tkinter import messagebox
+import time
+import threading
+
+def update_time():
+    current_time = time.strftime("%H:%M:%S")
+    current_date = time.strftime("%d-%b-%Y")
+    time_label.config(text=current_time)
+    date_label.config(text=current_date)
+    time_label.after(1000, update_time)
+
+
+# Create window
+root = tk.Tk()
+root.title("Digital Clock ")
+root.geometry("400x250")
+root.config(bg="black")
+
+# Time Label
+time_label = tk.Label(root, font=("Arial", 50, "bold"), bg="black", fg="cyan")
+time_label.pack(pady=10)
+
+# Date Label
+date_label = tk.Label(root, font=("Arial", 20), bg="black", fg="white")
+date_label.pack()
+
+
+update_time()
+root.mainloop()
